@@ -15,34 +15,15 @@ then, it should print to the console the resulting list of permutations.
 */
 
 
+// http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
+// https://stackoverflow.com/questions/4240080/generating-all-permutations-of-a-given-string
+
 
 class QuestionFour0
 {
 	public static void main(String[] args) {
 		System.out.println("Question Four");
-		// permutation("ABCD");
-		// for(String item : ret) {
-		// 	System.out.println(item);
-		// }
-		swap("ABCD");
-	}
-
-	static void swap(String st) {
-		StringBuilder str = new StringBuilder(st);
-		for (int i = 0; i < str.length(); i++) {
-			for (int j = 0; j < str.length(); j++) {
-				if (j == i) {
-					continue;			
-				}
-				char temp = str.charAt(j);
-				str.setCharAt(j, str.charAt(i));
-				str.setCharAt(i, temp);
-				System.out.println(str);
-
-				
-			}
-
-		}
+		permutation("ABCD");
 	}
 
 	public static void permutation(String str) { 
